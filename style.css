@@ -1,0 +1,33 @@
+body {
+  background: #000323;
+  font-family: Oswald, sans-serif;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+  color: orange;
+}
+
+#logo {
+  margin: 3em 0;
+}
+img {
+  max-width: 90%;
+}
+
+#contact {
+  padding: 1em 0;
+  background: #b7b7b7;
+  color: #000323;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+i {
+  font-size: 1.5em;
+}
