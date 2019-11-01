@@ -1,27 +1,203 @@
 body {
-  background: #000323;
-  font-family: Oswald, sans-serif;
-  text-align: center;
+  font-family: sans-serif;
   padding: 0;
   margin: 0;
 }
 
-h1 {
-  font-size: 3em;
-  color: orange;
+/**********************HEADER***********************/
+header {
+  padding: 0 0.5em;
+  background: #000323;
+  display: grid;
+  grid-template-columns: 150px 1fr auto;
+  align-items: center;
 }
 
 #logo {
-  margin: 3em 0;
+  padding-top: 5px;
 }
 img {
-  max-width: 90%;
+  max-width: 100%;
 }
 
-#contact {
-  padding: 1em 0;
+h1 {
+  font-family: Oswald, sans-serif;
+  font-size: 3em;
+  color: #b7b7b7;
+  margin: 0;
+}
+
+.horario {
+  color: #fff;
+}
+.horario p {
+  margin: 0;
+}
+
+/**********************MAIN***********************/
+#menu {
+  display: none;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+}
+
+.menu-option {
+  padding: 1em;
   background: #b7b7b7;
+  border: 2px solid #fff;
   color: #000323;
+  font-weight: bold;
+}
+.menu-option:first-child {
+  margin-right: 1em;
+}
+.menu-option:hover {
+  background: #000323;
+  color: #fff;
+}
+
+main {
+  color: #fff;
+}
+.top {
+  background-image: url("images/foto-loja.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.shade {
+  padding: 2em 3em;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.whatsapp {
+  color: #fff;
+  margin: 3em auto 0;
+  background: #1ad13f;
+  padding: 1em;
+  text-align: center;
+  width: fit-content;
+  border-radius: 2em;
+}
+.whatsapp-link {
+  text-decoration: none;
+}
+.whatsapp p {
+  margin: 0;
+}
+.whatsapp-number {
+  font-size: 2.5em;
+}
+
+.promocoes {
+  padding: 2em 3em;
+  background: #b7b7b7;
+}
+.promocoes h2 {
+  text-align: center;
+}
+.produtos {
+  display: grid;
+  /*grid-template-columns: repeat(auto-fill, minmax(200px, auto));*/
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2em;
+}
+figure {
+  color: #000323;
+  background: #fff;
+  width: 200px;
+  height: fit-content;
+  text-align: center;
+  border: 2px solid #fff;
+  padding-bottom: 0.3em;
+  margin: 0;
+}
+figcaption {
+  padding: 0.3em;
+}
+.comprar {
+  padding: 0.3em;
+  background: #1ad13f;
+  border: none;
+  color: #fff;
+}
+figcaption strong {
+  font-size: 1.2em;
+  background: yellow;
+  color: #f00;
+}
+
+/**********************FOOTER***********************/
+footer {
+  padding: 2em 0;
+  background: #000323;
+  color: #fff;
+}
+
+footer div {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.contact-text {
+  color: #b7b7b7;
+  font-size: 1em;
+  margin-bottom: 0.1em;
+  /*display: none;*/
+}
+.contact {
+  margin: 0;
+  padding: 0.5em 0 0.5em 2em;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.contact-whatsapp {
+  background: #1ad13f;
+}
+
+.contact-phone {
+  background: #666;
+}
+
+.contact-instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+.contact-facebook {
+  background: #3b5998;
+}
+
+.contact-email {
+  background: #f53a3a;
+}
+
+.contact-local {
+  background: #ffff00af;
+}
+
+/******************************************************/
+h2 {
+  font-size: 4em;
+  margin: 0;
+  color: #fff;
+}
+
+h3 {
+  color: #fff;
+  font-size: 3em;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 p {
@@ -30,4 +206,8 @@ p {
 
 i {
   font-size: 1.5em;
+}
+
+button:hover {
+  cursor: pointer;
 }
