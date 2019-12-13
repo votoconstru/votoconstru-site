@@ -4,210 +4,203 @@ body {
   margin: 0;
 }
 
-/**********************HEADER***********************/
+.hide-mobile {
+  display: none;
+}
+.hide-desktop {
+  display: inline-block;
+}
+
+/**********/
+/* HEADER */
+/**********/
 header {
-  padding: 0 0.5em;
+  color: #b7b7b7;
   background: #000323;
-  display: grid;
-  grid-template-columns: 150px 1fr auto;
+  text-align: center;
+  padding: 0.2rem 0;
+}
+
+#logo-e-nome {
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #logo {
-  padding-top: 5px;
+  width: 25vw;
 }
+
 img {
   max-width: 100%;
 }
 
-h1 {
-  font-family: Oswald, sans-serif;
-  font-size: 3em;
-  color: #b7b7b7;
+#nome {
+  margin: 0;
+  font-size: 8vw;
+}
+
+#mpc {
+  font-size: 5.4vw;
   margin: 0;
 }
 
-.horario {
-  color: #fff;
-}
-.horario p {
-  margin: 0;
-}
+/********/
+/* MAIN */
+/********/
 
-/**********************MAIN***********************/
-#menu {
-  display: none;
-  justify-content: flex-end;
-  margin-bottom: 1em;
-}
-
-.menu-option {
-  padding: 1em;
-  background: #b7b7b7;
-  border: 2px solid #fff;
-  color: #000323;
-  font-weight: bold;
-}
-.menu-option:first-child {
-  margin-right: 1em;
-}
-.menu-option:hover {
-  background: #000323;
+/********************** TOPO ***********************/
+#main-topo {
   color: #fff;
-}
-
-main {
-  color: #fff;
-}
-.top {
-  background-image: url("images/foto-loja.jpg");
+  background-image: url("images/foto-loja.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-}
-.shade {
-  padding: 2em 3em;
-  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2em;  
 }
 
-.whatsapp {
-  color: #fff;
-  margin: 3em auto 0;
-  background: #1ad13f;
-  padding: 1em;
-  text-align: center;
-  width: fit-content;
-  border-radius: 2em;
-}
-.whatsapp-link {
-  text-decoration: none;
-}
-.whatsapp p {
-  margin: 0;
-}
-.whatsapp-number {
-  font-size: 2.5em;
+#sombra {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
 }
 
-.promocoes {
-  padding: 2em 3em;
-  background: #b7b7b7;
-}
-.promocoes h2 {
+#titulo {
   text-align: center;
-}
-.produtos {
-  display: grid;
-  /*grid-template-columns: repeat(auto-fill, minmax(200px, auto));*/
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 2em;
-}
-figure {
-  color: #000323;
-  background: #fff;
-  width: 200px;
-  height: fit-content;
-  text-align: center;
-  border: 2px solid #fff;
-  padding-bottom: 0.3em;
-  margin: 0;
-}
-figcaption {
-  padding: 0.3em;
-}
-.comprar {
-  padding: 0.3em;
-  background: #1ad13f;
-  border: none;
-  color: #fff;
-}
-figcaption strong {
-  font-size: 1.2em;
-  background: yellow;
-  color: #f00;
+  font-size: 6vw;
 }
 
-/**********************FOOTER***********************/
-footer {
-  padding: 2em 0;
+ul {
+  padding-left: 1rem;
+}
+
+.text {
+  text-align: justify;
+  margin: 1.5rem 0;  
+}
+
+#link-whatsapp {
+  text-decoration: none; 
+}
+
+#botao-whatsapp {
   background: #000323;
   color: #fff;
-}
-
-footer div {
+  margin: 0 auto 1rem;
+  padding: 1rem;
+  text-align: center;
   width: fit-content;
-  margin: 0 auto;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 1px #fff;
 }
 
-.contact-text {
-  color: #b7b7b7;
-  font-size: 1em;
-  margin-bottom: 0.1em;
-  /*display: none;*/
-}
-.contact {
-  margin: 0;
-  padding: 0.5em 0 0.5em 2em;
-  color: #fff;
-  border-radius: 10px;
-}
-
-.contact-whatsapp {
-  background: #1ad13f;
-}
-
-.contact-phone {
-  background: #666;
-}
-
-.contact-instagram {
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-}
-
-.contact-facebook {
-  background: #3b5998;
-}
-
-.contact-email {
-  background: #f53a3a;
-}
-
-.contact-local {
-  background: #ffff00af;
-}
-
-/******************************************************/
-h2 {
-  font-size: 4em;
-  margin: 0;
-  color: #fff;
-}
-
-h3 {
-  color: #fff;
-  font-size: 3em;
+#botao-whatsapp p {
   margin: 0;
 }
 
-a {
+#botao-whatsapp p:first-child {
+  font-size: 3.2vw;
+}
+
+#numero-whatsapp {
+  font-size: 6.4VW;
+}
+
+/********************** DESTAQUES ***********************/
+#titulo-destaques {
+  text-align: center;
+  font-size: 6vw;
+}
+
+.produto {
+  color: #000323;
+  width: 70%;
+  height: fit-content;
+  text-align: center;
+  border: 2px solid #000323;
+  padding: 0.3rem;
+  margin: 0 auto 1rem;
+  box-shadow: 5px 5px 5px #000323;
+}
+
+/**********/
+/* FOOTER */
+/**********/
+footer {
   color: #fff;
+  background: #000323;
+}
+
+#contacts {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+#contacts a {
   text-decoration: none;
+  color: #fff;
 }
 
-p {
-  font-size: 1.2em;
+#copyright {
+  font-size: 0.8rem;
+  text-align: center;
+  background: #000310;
+  padding: 0.5rem;
 }
 
-i {
-  font-size: 1.5em;
+/*
+###########################################
+###              DESKTOP                ###
+###########################################
+*/
+@media (min-width: 800px) {
+
+.hide-desktop {
+  display: none;
+}
+.hide-mobile {
+  display: inline-block;
 }
 
-button:hover {
-  cursor: pointer;
+/**********/
+/* HEADER */
+/**********/
+header {
+  padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+}
+
+#logo-e-nome {
+  justify-content: flex-start;
+}
+
+#logo {
+  width: 10vw;
+  /* max-width: 150px; */
+}
+
+#nome {
+  font-size: 3.5vw;
+  /* font-size: 3rem; */
+  margin: 0;
+}
+
+/********/
+/* MAIN */
+/********/
+
+/********************** TOPO ***********************/
+#sombra {
+  padding: 4rem;
+}
+#titulo {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#botao-whatsapp p:first-child {
+  font-size: 1.5rem;
+}
+
+#numero-whatsapp {
+  font-size: 3rem;
+}
+
 }

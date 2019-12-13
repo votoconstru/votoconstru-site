@@ -1,0 +1,450 @@
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /**********************HEADER***********************/
+  header {
+    padding: 0 0.5em;
+    background: #000323;
+    display: flex;
+    min-height: 80px;
+  }
+  
+  #logo {
+    padding-top: 5px;
+  }
+  img {
+    max-width: 150px;
+  }
+  
+  h1 {
+    font-family: Oswald, sans-serif;
+    font-size: 3em;
+    color: #b7b7b7;
+    margin: 0;
+  }
+  
+  /**********************MAIN***********************/
+  #menu {
+    display: none;
+    justify-content: flex-end;
+    margin-bottom: 1em;
+  }
+  
+  .menu-option {
+    padding: 1em;
+    background: #b7b7b7;
+    border: 2px solid #fff;
+    color: #000323;
+    font-weight: bold;
+  }
+  .menu-option:first-child {
+    margin-right: 1em;
+  }
+  .menu-option:hover {
+    background: #000323;
+    color: #fff;
+  }
+  
+  main {
+    color: #fff;
+  }
+  .top {
+    background-image: url("images/foto-loja.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.2em;  
+  }
+  .shade {
+    padding: 4rem;
+    /* background: rgba(0, 3, 35, 0.8); */
+    background: rgba(0, 0, 0, 0.8);
+    /* min-height: calc(100vh - 80px); */
+  }
+  
+  .text {
+    font-family: sans-serif;
+    text-align: justify;
+    margin: 1.5rem 0;
+  }
+  
+  .whatsapp {
+    color: #fff;
+    margin: 2rem auto 0;
+    background: #000323;
+    /* background: #1ad13f; */
+    padding: 1em;
+    text-align: center;
+    width: fit-content;
+    border-radius: 2em;
+    box-shadow: 4px 4px 1px #fff;
+  }
+  .whatsapp-link {
+    text-decoration: none;
+  }
+  .whatsapp p {
+    margin: 0;
+  }
+  .whatsapp-number {
+    font-size: 2.5em;
+  }
+  
+  .promocoes {
+    padding: 2em 3em;
+    background: #fff;
+    color: #000323;
+  }
+  .promocoes h2 {
+    color: #000323;
+    text-align: center;
+  }
+  .produtos {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fill, minmax(200px, auto));*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+  }
+  figure {
+    color: #000323;
+    background: #fff;
+    width: 200px;
+    height: fit-content;
+    text-align: center;
+    border: 2px solid #000323;
+    padding: 0.3rem 0;
+    margin: 0;
+    box-shadow: 5px 5px 5px #000323;
+  }
+  figcaption {
+    padding: 0.3em;
+  }
+  .comprar {
+    padding: 0.3em;
+    background: #000323;
+    border: none;
+    color: #fff;
+  }
+  figcaption strong {
+    font-size: 1.2em;
+    background: yellow;
+    color: #f00;
+  }
+  
+  /**********************FOOTER***********************/
+  footer {
+    color: #fff;
+    background: #000323;  
+  }
+  .contacts {
+    padding: 1rem 4rem;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #copyright {
+    width: fit-content;
+    text-align: center;
+    background: #000310;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  
+  .contact-text {
+    color: #b7b7b7;
+    font-size: 1em;
+    margin-bottom: 0.1em;
+    /*display: none;*/
+  }
+  .contact {
+    margin: 0;
+    padding: 0.5em 0 0.5em 2em;
+    color: #000323;
+    border-radius: 10px;
+    background: #b7b7b7 !important;
+  }
+  
+  .contact-whatsapp {
+    background: #1ad13f;
+  }
+  
+  .contact-phone {
+    background: #666;
+  }
+  
+  .contact-instagram {
+    background: linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+  }
+  
+  .contact-facebook {
+    background: #3b5998;
+  }
+  
+  .contact-email {
+    background: #f53a3a;
+  }
+  
+  .contact-local {
+    background: #ffff00af;
+  }
+  
+  /******************************************************/
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+  }
+  
+  h3 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  /* ************************************************************************
+  ********************************* DESKTOP *********************************
+  ************************************************************************ */
+  @media (min-width: 700px) {
+    body {
+      font-family: sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+    
+    /**********************HEADER***********************/
+    header {
+      padding: 0 0.5em;
+      background: #000323;
+      display: flex;
+      min-height: 80px;
+    }
+    
+    #logo {
+      padding-top: 5px;
+    }
+    img {
+      max-width: 150px;
+    }
+    
+    h1 {
+      font-family: Oswald, sans-serif;
+      font-size: 3em;
+      color: #b7b7b7;
+      margin: 0;
+    }
+    
+    /**********************MAIN***********************/
+    #menu {
+      display: none;
+      justify-content: flex-end;
+      margin-bottom: 1em;
+    }
+    
+    .menu-option {
+      padding: 1em;
+      background: #b7b7b7;
+      border: 2px solid #fff;
+      color: #000323;
+      font-weight: bold;
+    }
+    .menu-option:first-child {
+      margin-right: 1em;
+    }
+    .menu-option:hover {
+      background: #000323;
+      color: #fff;
+    }
+    
+    main {
+      color: #fff;
+    }
+    .top {
+      background-image: url("images/foto-loja.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-size: 1.2em;  
+    }
+    .shade {
+      padding: 4rem;
+      /* background: rgba(0, 3, 35, 0.8); */
+      background: rgba(0, 0, 0, 0.8);
+      /* min-height: calc(100vh - 80px); */
+    }
+    
+    .text {
+      font-family: sans-serif;
+      text-align: justify;
+      margin: 1.5rem 0;
+    }
+    
+    .whatsapp {
+      color: #fff;
+      margin: 2rem auto 0;
+      background: #000323;
+      /* background: #1ad13f; */
+      padding: 1em;
+      text-align: center;
+      width: fit-content;
+      border-radius: 2em;
+      box-shadow: 4px 4px 1px #fff;
+    }
+    .whatsapp-link {
+      text-decoration: none;
+    }
+    .whatsapp p {
+      margin: 0;
+    }
+    .whatsapp-number {
+      font-size: 2.5em;
+    }
+    
+    .promocoes {
+      padding: 2em 3em;
+      background: #fff;
+      color: #000323;
+    }
+    .promocoes h2 {
+      color: #000323;
+      text-align: center;
+    }
+    .produtos {
+      display: grid;
+      /*grid-template-columns: repeat(auto-fill, minmax(200px, auto));*/
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 2em;
+    }
+    figure {
+      color: #000323;
+      background: #fff;
+      width: 200px;
+      height: fit-content;
+      text-align: center;
+      border: 2px solid #000323;
+      padding: 0.3rem 0;
+      margin: 0;
+      box-shadow: 5px 5px 5px #000323;
+    }
+    figcaption {
+      padding: 0.3em;
+    }
+    .comprar {
+      padding: 0.3em;
+      background: #000323;
+      border: none;
+      color: #fff;
+    }
+    figcaption strong {
+      font-size: 1.2em;
+      background: yellow;
+      color: #f00;
+    }
+    
+    /**********************FOOTER***********************/
+    footer {
+      color: #fff;
+      background: #000323;  
+    }
+    .contacts {
+      padding: 1rem 4rem;
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    #copyright {
+      width: fit-content;
+      text-align: center;
+      background: #000310;
+      padding: 0.5rem;
+      width: 100%;
+    }
+    
+    .contact-text {
+      color: #b7b7b7;
+      font-size: 1em;
+      margin-bottom: 0.1em;
+      /*display: none;*/
+    }
+    .contact {
+      margin: 0;
+      padding: 0.5em 0 0.5em 2em;
+      color: #000323;
+      border-radius: 10px;
+      background: #b7b7b7 !important;
+    }
+    
+    .contact-whatsapp {
+      background: #1ad13f;
+    }
+    
+    .contact-phone {
+      background: #666;
+    }
+    
+    .contact-instagram {
+      background: linear-gradient(
+        45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+      );
+    }
+    
+    .contact-facebook {
+      background: #3b5998;
+    }
+    
+    .contact-email {
+      background: #f53a3a;
+    }
+    
+    .contact-local {
+      background: #ffff00af;
+    }
+    
+    /******************************************************/
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+      margin: 0;
+      color: #fff;
+    }
+    
+    h3 {
+      color: #fff;
+      font-size: 2rem;
+      text-align: center;
+      margin: 0;
+    }
+    
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    button:hover {
+      cursor: pointer;
+    }
+  }
