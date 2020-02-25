@@ -28,7 +28,7 @@
           <li class="text">Faça o seu pedido diretamente do whatsapp (ou como preferir) e em poucos minutos a mercadoria vai estar na sua casa, também levamos a maquininha de cartão até você.</li>
           <li class="text">Tudo isso com preços justos e vendedores treinados para atender a sua necessidade.</li>
         </ul>
-        <a id="link-whatsapp" href="#">
+        <a id="link-whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=5515988278975&text=Ol%C3%A1%2C%20eu%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs">
           <div id="botao-whatsapp">
             <p>FAÇA SEU PEDIDO PELO WHATSAPP</p>
             <p id="numero-whatsapp"><i class="fab fa-whatsapp"></i> (15) 9 8827-8975</p>
@@ -40,27 +40,37 @@
     <div id="destaques">
       <h2 id="titulo-destaques">PRODUTOS EM DESTAQUE</h2>
       <div id="produtos">
-        <figure class="produto">
-          <img src="https://via.placeholder.com/300.png" alt="product-photo">
-          <figcaption>Escada utilitária 7 degraus extensível Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, explicabo. <strong>R$ 185,00</strong></figcaption>
-          <button class="comprar"><i class="fab fa-whatsapp"></i> QUERO ESTE ITEM</button>
-        </figure>
-        <figure class="produto">
-          <img src="images/porta-sanfonada-200px.png" alt="Porta Sanfonada">
-          <figcaption>Escada utilitária 7 degraus extensível <strong>R$ 85,00</strong></figcaption>
-          <button class="comprar"><i class="fab fa-whatsapp"></i> QUERO ESTE ITEM</button>
-        </figure>
-        <figure class="produto">
-          <img src="https://via.placeholder.com/300.png" alt="product-photo">
-          <figcaption>Escada utilitária 7 degraus extensível Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, explicabo. <strong>R$ 185,00</strong></figcaption>
-          <button class="comprar"><i class="fab fa-whatsapp"></i> QUERO ESTE ITEM</button>
-        </figure>
-        <figure class="produto">
-          <img src="https://via.placeholder.com/300.png" alt="product-photo">
-          <figcaption>Escada utilitária 7 degraus extensível Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, explicabo. <strong>R$ 185,00</strong></figcaption>
-          <button class="comprar"><i class="fab fa-whatsapp"></i> QUERO ESTE ITEM</button>
-        </figure>
+        <div class="metade">
+          <figure class="produto">
+            <img src="images/porta-sanfonada-200px.png" alt="Porta Sanfonada">
+            <figcaption>Economize no Orçamento utilizando Portas Sanfonadas, Produto de Qualidade, não fica Enroscando ao Abrir e Fechar, Instalação Super Fácil. Preço Válido para os Tamanhos: 60, 70 e 80 cm. <strong>R$ 85,00</strong></figcaption>
+            <a href="https://api.whatsapp.com/send?phone=5515988278975&text=Ol%C3%A1%2C%20tenho%20interesse%20na%20porta%20sanfonada" target="_blank"><button class="comprar"><i class="fab fa-whatsapp"></i> PEDIR VIA WHATSAPP</button></a>
+          </figure>
+          <figure class="produto">
+            <img src="images/tanquinho-200px.png" alt="Porta Sanfonada">
+            <figcaption>Tanquinho de Lavar Roupa com 1 Ano de Garantia. Disponível a Pronta Entrega nas Cores Branco, Prata e Preto. <strong>R$ 290,00</strong></figcaption>
+            <a href="https://api.whatsapp.com/send?phone=5515988278975&text=Ol%C3%A1%2C%20tenho%20interesse%20no%20tanquinho%20el%C3%A9trico" target="_blank"><button class="comprar"><i class="fab fa-whatsapp"></i> PEDIR VIA WHATSAPP</button></a>
+          </figure>
+          <figure class="produto">
+            <img src="images/porta-laminada-200px.png">
+            <figcaption>Porta Laminada Fechada. Tamanho 70 ou 80, Lados Direito ou Esquerdo <strong>R$ 199,99</strong></figcaption>
+            <a href="https://api.whatsapp.com/send?phone=5515988278975&text=Ol%C3%A1%2C%20tenho%20interesse%20na%20porta%20laminada" target="_blank"><button class="comprar"><i class="fab fa-whatsapp"></i> PEDIR VIA WHATSAPP</button></a>
+          </figure>
+        </div>
+        <div class="metade">
+          <figure class="produto">
+            <img src="images/escada-200px.png" alt="product-photo">
+            <figcaption>Escada Utilitária Extensível. Material Muito Resistente, pode ser utilizada Aberta ou Estendida, Chegando Próxima ao Dobro do Tamanho Original. 5 Degraus <strong>R$ 185,00</strong>; 7 Degraus <strong>R$ 185,00</strong>; 9 Degraus <strong>R$ 290,00</strong></figcaption>
+            <a href="https://api.whatsapp.com/send?phone=5515988278975&text=Ol%C3%A1%2C%20tenho%20interesse%20na%20escada%20extens%C3%ADvel" target="_blank"><button class="comprar"><i class="fab fa-whatsapp"></i> PEDIR VIA WHATSAPP</button></a>
+          </figure>
+          <figure class="produto">
+            <img src="images/veneziana-200px.png" alt="product-photo">
+            <figcaption>Janela Veneziana 120X100 <strong>R$ 329,99</strong></figcaption>
+            <a href="https://api.whatsapp.com/send?phone=5515988278975&text=Ol%C3%A1%2C%20tenho%20interesse%20na%20veneziana" target="_blank"><button class="comprar"><i class="fab fa-whatsapp"></i> PEDIR VIA WHATSAPP</button></a>
+          </figure>
+        </div>
       </div>
+      <p id="cta-visita">Para mais ofertas venha nos fazer uma visita e aproveite para tomar um café conosco</p>
     </div>
   </main>
   <footer>
@@ -78,8 +88,11 @@
       </div>
     </div>
     <div id="copyright">
-        &copy; 2019 - Votoconstru Materiais para Construção - Todos os Direitos Reservados
+        &copy; <span id="year"></span> - Votoconstru Materiais para Construção - Todos os Direitos Reservados
     </div>
   </footer>
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
 </body>
 </html>
