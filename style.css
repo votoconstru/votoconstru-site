@@ -56,11 +56,11 @@ img {
   background-image: url("images/foto-loja.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  font-size: 1.2em;  
+  font-size: 1.2em;
 }
 
 #sombra {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   padding: 1rem 2rem;
 }
 
@@ -75,11 +75,25 @@ ul {
 
 .text {
   text-align: justify;
-  margin: 1.5rem 0;  
+  margin: 1.5rem 0;
+}
+
+#corona {
+  background-color: #cc0000;
+  margin: 1rem -2rem;
+  padding: 0.1rem 2rem;
+  line-height: 1.7rem;
+  text-align: justify;
+  font-size: 1.3rem;
+}
+
+#corona span {
+  font-weight: bold;
+  font-size: 1.35rem;
 }
 
 #link-whatsapp {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 #botao-whatsapp {
@@ -103,13 +117,20 @@ ul {
 }
 
 #numero-whatsapp {
-  font-size: 6.4VW;
+  font-size: 6.4vw;
 }
 
 /********************** DESTAQUES ***********************/
 #titulo-destaques {
   text-align: center;
   font-size: 6vw;
+}
+
+.titulo-produto {
+  background-color: #000323;
+  color: #fff;
+  margin: 0;
+  padding: 0.5rem 0;
 }
 
 .produto {
@@ -119,9 +140,10 @@ ul {
   height: fit-content;
   text-align: center;
   border: 2px solid #000323;
-  padding-top: 0.3rem;
+  /* padding-top: 0.3rem; */
   margin: 0 auto 1rem;
   box-shadow: 5px 5px 5px #000323;
+  line-height: 1.3rem;
 }
 
 .comprar {
@@ -169,65 +191,69 @@ footer {
 ###########################################
 */
 @media (min-width: 800px) {
+  .hide-desktop {
+    display: none;
+  }
+  .hide-mobile {
+    display: inline-block;
+  }
 
-.hide-desktop {
-  display: none;
-}
-.hide-mobile {
-  display: inline-block;
-}
+  /**********/
+  /* HEADER */
+  /**********/
+  header {
+    padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+  }
 
-/**********/
-/* HEADER */
-/**********/
-header {
-  padding: 0.5rem 0.5rem 0.2rem 0.5rem;
-}
+  #logo-e-nome {
+    justify-content: flex-start;
+  }
 
-#logo-e-nome {
-  justify-content: flex-start;
-}
+  #logo {
+    width: 10vw;
+    /* max-width: 150px; */
+  }
 
-#logo {
-  width: 10vw;
-  /* max-width: 150px; */
-}
+  #nome {
+    font-size: 3.5vw;
+    /* font-size: 3rem; */
+    margin: 0;
+  }
 
-#nome {
-  font-size: 3.5vw;
-  /* font-size: 3rem; */
-  margin: 0;
-}
+  /********/
+  /* MAIN */
+  /********/
 
-/********/
-/* MAIN */
-/********/
+  /********************** TOPO ***********************/
 
-/********************** TOPO ***********************/
+  #sombra {
+    padding: 4rem;
+  }
+  #titulo {
+    font-size: 3rem;
+    margin: 0;
+  }
 
-#sombra {
-  padding: 4rem;
-}
-#titulo {
-  font-size: 3rem;
-  margin: 0;
-}
+  #corona {
+    margin: 1rem -4rem;
+    padding: 1rem 4rem;
+  }
 
-#botao-whatsapp {
-  width: fit-content;
-}
+  #botao-whatsapp {
+    width: fit-content;
+  }
 
-#botao-whatsapp p:first-child {
-  font-size: 1.5rem;
-}
+  #botao-whatsapp p:first-child {
+    font-size: 1.5rem;
+  }
 
-#numero-whatsapp {
-  font-size: 3rem;
-}
+  #numero-whatsapp {
+    font-size: 3rem;
+  }
 
-/********************** DESTAQUES ***********************/
+  /********************** DESTAQUES ***********************/
 
-/* #produtos {
+  /* #produtos {
   display: flex;
   flex-wrap: wrap;
   padding: 0 2rem;
@@ -237,26 +263,25 @@ header {
   max-width: 310px;
 } */
 
-#titulo-destaques {
-  font-size: 3rem;
-}
+  #titulo-destaques {
+    font-size: 3rem;
+  }
 
-#produtos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+  #produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-#cta-visita {
-  text-align: center;
-}
+  #cta-visita {
+    text-align: center;
+  }
 
-/**********/
-/* FOOTER */
-/**********/
-#contacts {
-  padding: 1rem 4rem;
-  display: flex;
-  justify-content: space-between;
-}
-
+  /**********/
+  /* FOOTER */
+  /**********/
+  #contacts {
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
 }
