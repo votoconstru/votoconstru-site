@@ -9,6 +9,34 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- Global site tag (gtag.js) - Google Ads: 721049842 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-721049842"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-721049842');
+  </script>
+
+  <!-- Event snippet for Enviou mensagem no WhatsApp conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-721049842/f8rECKbd_MoBEPKx6dcC',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+  
 </head>
 <body>
   <header>
@@ -32,7 +60,7 @@
         <div id="corona">
           <p>Estamos passando por um momento difícil, e é muito importante que todos fiquem em casa. Por isso estamos fazendo <span>Delivery de Materiais para Construção</span>. E não importa se você precisa apenas de miudezas, basta enviar uma mensagem e nós vamos entregar da mesma forma</p>
         </div>
-        <a id="link-whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=5515988278975&text=Ol%C3%A1%2C%20eu%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs">
+        <a id="link-whatsapp" onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=5515988278975&text=Ol%C3%A1%2C%20eu%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs');" href="https://api.whatsapp.com/send?phone=5515988278975&text=Ol%C3%A1%2C%20eu%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs">
           <div id="botao-whatsapp">
             <p>FAÇA SEU PEDIDO PELO WHATSAPP</p>
             <p id="numero-whatsapp"><i class="fab fa-whatsapp"></i> (15) 9 8827-8975</p>
