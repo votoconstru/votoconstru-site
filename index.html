@@ -55,7 +55,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   /></noscript>
   <!-- End Facebook Pixel Code -->
 </head>
-<body>
+<body onscroll="showWhatsappIcon()">
   <header>
     <div id="logo-e-nome">
       <div id="logo">
@@ -145,8 +145,25 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         &copy; <span id="year"></span> - Votoconstru Materiais para Construção - Todos os Direitos Reservados
     </div>
   </footer>
+  <a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=5515988278975&text=Ol%C3%A1%2C%20eu%20gostaria%20de%20fazer%20um%20or%C3%A7amento');" id="whatsapp-float" class="whatsapp-float">
+    <i class="fab fa-whatsapp i-whatsapp-float"></i>
+  </a>
   <script>
     document.getElementById('year').innerText = new Date().getFullYear();
+
+    var whatsappFloat = document.getElementById('whatsapp-float');
+    
+    function showWhatsappIcon() {
+      var topoSize = document.getElementById('main-topo').offsetHeight;
+      var elmnt = document.documentElement;
+      
+
+      if (elmnt.scrollTop > topoSize) {
+        whatsappFloat.style.display = 'block';
+      } else {
+        whatsappFloat.style.display = 'none';
+      }
+    }
   </script>
 </body>
 </html>
