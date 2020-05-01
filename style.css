@@ -260,6 +260,10 @@ footer {
 
   /********************** TOPO ***********************/
 
+  #main-topo {
+    font-size: 1.5em;
+  }
+
   #sombra {
     padding: 4rem;
   }
