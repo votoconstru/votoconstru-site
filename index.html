@@ -70,13 +70,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       <div id="sombra">
         <h2 id="titulo">A ENTREGA MAIS RÁPIDA DA CIDADE</h2>
         <ul>
-          <li class="text">Aqui nós não ficamos esperando acumular entregas para "aproveitar a viagem", nossa prioridade é a necessidade do cliente e horário combinado é sagrado para nós.</li>
-          <li class="text">Faça o seu pedido diretamente do whatsapp (ou como preferir) e em poucos minutos a mercadoria vai estar na sua casa, também levamos a maquininha de cartão até você.</li>
-          <li class="text">Tudo isso com preços justos e vendedores treinados para atender a sua necessidade.</li>
+          <li class="text">Aqui não esperamos acumular entregas para "aproveitar a viagem", Priorizamos a sua Necessidade e <span class="highlight-orange">horário combinado é sagrado para nós</span></li>
+          <li class="text">Precisa apenas de Miudezas? Também temos um Motoboy Exclusivo para <span class="highlight-red">Delivery de Materiais para Construção</span></li>
+          <li class="text">Peça diretamente do WhatsApp e em Poucos Minutos a mercadoria vai estar na sua Casa</li>
+          <li class="text">Tudo isso com Preços Justos e Vendedores Treinados para Atender a sua Necessidade</li>
         </ul>
-        <div id="corona">
+        <!-- <div id="corona">
           <p>Estamos passando por um momento difícil, e é muito importante que todos fiquem em casa. Por isso estamos fazendo <span>Delivery de Materiais para Construção</span>. E não importa se você precisa apenas de miudezas, basta enviar uma mensagem e nós vamos entregar da mesma forma</p>
-        </div>
+        </div> -->
         <a id="link-whatsapp" onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=5515988278975&text=Ol%C3%A1%2C%20eu%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs');" href="https://api.whatsapp.com/send?phone=5515988278975&text=Ol%C3%A1%2C%20eu%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs">
           <div id="botao-whatsapp">
             <p>FAÇA SEU PEDIDO PELO WHATSAPP</p>
@@ -157,7 +158,6 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       var topoSize = document.getElementById('main-topo').offsetHeight;
       var elmnt = document.documentElement;
       
-
       if (elmnt.scrollTop > topoSize) {
         whatsappFloat.style.display = 'block';
       } else {
