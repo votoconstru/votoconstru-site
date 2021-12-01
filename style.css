@@ -53,14 +53,15 @@ img {
 /********************** TOPO ***********************/
 #main-topo {
   color: #fff;
-  background-image: url("images/foto-loja.jpg");
+  background-color: #000323;
+  /* background-image: url("images/foto-loja.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   font-size: 1em;
 }
 
 #sombra {
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.7); */
   padding: 1rem 2rem;
 }
 
@@ -110,7 +111,7 @@ ul {
 }
 
 #botao-whatsapp {
-  background: #000323;
+  background: #25d366;
   color: #fff;
   margin: 0 auto 1rem;
   padding: 1rem;
